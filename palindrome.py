@@ -100,8 +100,8 @@ if __name__ == '__main__':
     print ("This program generates palindrome string for given user input. \nInstructions for the inputs:\n 1-All the values should be integer\n 2-Maximum string size should be <=20\n 3:Max try for an input is 3")
     input("If you want to generate palindrome and understood the input guideline. \nPress Enter to continue...")
     string_lenght = validate_input("string")
-    if string_lenght > 20:
-        print ("string lenght must be < 20")
+    if string_lenght > 20 or string_lenght == 0:
+        print ("string lenght must be 0 <= sting <= 20")
         exit()
     char_lenght = validate_input("char")
     digit_lenthit_lenght = validate_input("digit_lenthit")
