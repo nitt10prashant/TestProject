@@ -68,15 +68,6 @@ def palindrome(alphabet_lenth, digit_lenth, specialchar_lenght):
     randomized_halfstring = "".join(Halfstring)
     return randomized_halfstring + mid_char + randomized_halfstring[::-1]
 
-
-def neg(a=2, b=3):
-    try:
-        if a < b:
-            raise NegativeNumber
-    except NegativeNumber:
-        print ("this is negative number")
-
-
 def validate_input(input_type, iter=3):
     num = None
     print ("Enter {} lenght in integer".format(input_type))

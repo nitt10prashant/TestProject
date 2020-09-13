@@ -1,0 +1,22 @@
+TEST SCENARIO
+==============
+Positive Scenario:
+    1-Provide string length 15 , and alphabet=7,digit=4,special_char=4
+      Expected o/p: A valid palindrome string of length 15
+    2-Provide valid string length, say 10, and provide 5 , 0, 5 input
+      Expected o/p: a valid palindrome string without digits
+    3-Provide valid string length, say 10, and provide 10 , 0, 0 input
+      Exepcted o/p: A valid palindrome string without digits and special char
+Negative Scenario:
+    1-Provide invalid input like char,float etc.
+      Expected o/p: you should get three chance to correct it
+    2-Provide string length to 0 , -10 , 21 :
+      Expected o/p for 0: string length must be >0
+      Expected o/p for -10: after 3 try "Exceeded number of retry for the input"
+      Expected o/p for 21: string length must be <= 20
+    3-Provide valid string length and provide - ive value to one/more  input
+      Expected o/p: after 3 try "Exceeded number of retry for the input"
+    4-Provide valid string length input odd number for more than one input
+      Expected o/p: "Input is not valid to create a Palindrome."
+    5-Provide valid string length and make sure sum of input of other param is more tha string length
+      Expected o/p: "Given string length is less than sum individual input length"
